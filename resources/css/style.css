@@ -1,0 +1,198 @@
+
+body{
+  font-family:"Ubuntu";
+}
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  height:100%;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/*header */
+header{
+height:4rem;
+ background-color: white;
+ background-size: cover;
+ width:100%;
+ position: fixed;
+}
+header .container{
+  display:flex;
+  align-items: center;
+}
+
+header img{
+  padding-left: 1.5rem;
+  height:3rem;
+}
+header .logo{
+  flex-grow:1;
+}
+nav{
+  display:flex;
+  padding: 0 1.5rem;
+}
+header p{
+  padding-left: 1rem;
+}
+header .bold{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+header span{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+/*banner1 */
+.banner1{
+  background-color: #DCDCDC;
+  background-size: cover;
+}
+.banner1 .container{
+  padding-top: 4rem;
+  display:flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.banner1imageframe{
+  height:100%;
+  width:60%;
+  min-width: 500px;
+}
+.banner1image{
+  padding:2rem 1.5rem;
+}
+.banner1image img{
+  width:100%;
+}
+.banner1content{
+  width:40%;
+}
+.banner1contentbox{
+  padding-left: 1.5rem;
+}
+
+.banner1btn{
+
+  background-color: black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner1btn a{
+    color:white;
+  font-size: 18px;
+  padding:1rem;
+}
+
+/*banner2 */
+.banner2{
+  background-color: #ececeb;
+  background-size: cover;
+}
+.banner2 .container{
+  display:flex;
+
+}
+.banner2contentleft{
+  padding: 0 1.5rem;
+  padding-bottom:2rem;
+
+}
+.banner2imageframe{
+  height:100%;
+  width:60%;
+  min-width: 500px;
+  border-right: 1px solid #767675;
+}
+.banner2image{
+  padding:2rem 1.5rem;
+}
+.banner2image img{
+  width:100%;
+}
+.banner2content{
+  height: 100%;
+  width:40%;
+  padding:1rem 0 2rem 0;
+  flex-flow:column;
+}
+.banner2contentbox{
+ width:100%;
+ display:flex;
+ align-items: center;
+}
+.banner2contentbox img{
+  width:35%;
+  padding: 1rem;
+}
+
+.first, .second{
+  border-bottom: 1px solid #767675;
+}
+.third{
+  background-color: #d4d4d3;
+}
+.banner2detail{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.banner2detail h2{
+  padding-bottom:1rem;
+}
+.banner2detail p{
+  padding-bottom:1rem;
+  line-height: 1.4;
+  font-size:1rem;
+  color:rgba(0,0,0,0.5)
+}
+.banner2detail a{
+  padding-bottom:1rem;
+  line-height: 1.4;
+  font-size:1rem;
+  color:blue;
+}
+
+/*banner3 */
+.banner3{
+  background-color: #d4d4d3;
+  background-size: cover;
+}
+.banner3 .container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.banner3 h1{
+  padding: 2rem 0;
+}
+.banner3allboxes{
+  display:flex;
+  justify-content: space-around;
+  margin:0 64px;
+}
+.banner3box{
+  width:32%;
+  margin:0 8px 32px 8px;
+  background-color: white;
+  height:22rem;
+
+}
+.banner3box img{
+  width:100%;
+}
