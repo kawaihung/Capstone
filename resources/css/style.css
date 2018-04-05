@@ -20,6 +20,54 @@ h2{
   font-size: 1.5rem;
   font-weight: 500;
 }
+a {
+  transition: color 100ms 200ms;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+a:active{
+  color:red;
+}
+p, a, h3{
+  color:rgba(20,20,20,0.6);
+}
+p{
+  line-height: 1.4;
+}
+h1, h2{
+  color:rgba(20,20,20,0.8);
+}
+
+.mobile{
+  display: none;
+}
+
+#hover, .hover, .hover2{
+  transition: background-color .5s;
+}
+#hover:hover, .hover:hover{
+  background-color: rgba(255,127,80,0.3);
+}
+.hover2:hover{
+  background-color: rgba(255,69,0, 0.1);
+}
+
+
+h1{
+  transition: font-size 0.5s;
+}
+h1:hover{
+  font-size:3.2rem;
+}
+h2, h3{
+  transition: font-size 0.5s;
+}
+h2:hover, h3:hover{
+  font-size:1.8rem;
+}
 
 /*header */
 header{
@@ -36,7 +84,7 @@ header .container{
 
 header img{
   padding-left: 1.5rem;
-  height:3rem;
+  height:2.5rem;
 }
 header .logo{
   flex-grow:1;
@@ -45,7 +93,7 @@ nav{
   display:flex;
   padding: 0 1.5rem;
 }
-header p{
+header a{
   padding-left: 1rem;
 }
 header .bold{
@@ -56,9 +104,37 @@ header span{
   font-weight: 300;
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width:478px){
+.mobile{
+  display:block;
+}
+header .logo, header nav, .nomobile{
+  display:none;
+}
+header .container{
+
+  justify-content:center;
+}
+header img{
+  flex-grow: 1;
+  padding: 0.4rem 1rem 0;
+}
+.icon{
+  height: 2.2rem;
+}
+.mobileicon{
+  transition: height 0.5s;
+}
+.mobileicon:hover{
+  height:4rem;
+}
+}
+
+
 /*banner1 */
 .banner1{
-  background-color: #DCDCDC;
+  background-color: rgba(150,150,150,0.3);
   background-size: cover;
 }
 .banner1 .container{
@@ -70,7 +146,7 @@ header span{
 .banner1imageframe{
   height:100%;
   width:60%;
-  min-width: 500px;
+
 }
 .banner1image{
   padding:2rem 1.5rem;
@@ -86,21 +162,52 @@ header span{
 }
 
 .banner1btn{
-
-  background-color: black;
+  background-color: rgba(20,20,20,0.8);
   display:flex;
   align-items: center;
   justify-content: center;
+  transition: all 1s;
+
+
+}
+.banner1btn:hover{
+  background-color:rgba(0,0,0,0.5);
+
 }
 .banner1btn a{
     color:white;
   font-size: 18px;
-  padding:1rem;
+  padding:1rem ;
+  transition: all 1s;
+}
+.banner1btn a:hover{
+    padding:2rem ;
+
+}
+
+@media only screen and (max-width:478px){
+.banner .container{
+  display: block;
+}
+.banner1imageframe{
+  height:auto;
+  width:100%;
+}
+.banner1image{
+  padding:0 0 2rem 0;
+}
+.banner1content{
+  width:100%;
+}
+.banner1contentbox{
+  padding:0 1rem 2rem;
+}
+
 }
 
 /*banner2 */
 .banner2{
-  background-color: #ececeb;
+  background-color: rgba(150,150,150,0.2);
   background-size: cover;
 }
 .banner2 .container{
@@ -114,9 +221,9 @@ header span{
 }
 .banner2imageframe{
   height:100%;
-  width:60%;
-  min-width: 500px;
-  border-right: 1px solid #767675;
+  max-width:60%;
+
+  border-right: 1px solid rgba(70,70,70,0.2);
 }
 .banner2image{
   padding:2rem 1.5rem;
@@ -125,10 +232,10 @@ header span{
   width:100%;
 }
 .banner2content{
-  height: 100%;
+  min-height: 100%;
   width:40%;
   padding:1rem 0 2rem 0;
-  flex-flow:column;
+
 }
 .banner2contentbox{
  width:100%;
@@ -140,11 +247,11 @@ header span{
   padding: 1rem;
 }
 
-.first, .second{
-  border-bottom: 1px solid #767675;
+.banner2 .first, .banner2 .second{
+  border-bottom: 1px solid rgba(70,70,70,0.2);
 }
-.third{
-  background-color: #d4d4d3;
+.banner2 .third{
+  background-color: rgba(70,70,70,0.1);
 }
 .banner2detail{
   display: flex;
@@ -157,7 +264,6 @@ header span{
 }
 .banner2detail p{
   padding-bottom:1rem;
-  line-height: 1.4;
   font-size:1rem;
   color:rgba(0,0,0,0.5)
 }
@@ -168,9 +274,37 @@ header span{
   color:blue;
 }
 
+@media only screen and (max-width:478px){
+
+.banner2contentbox{
+width:100%;
+display:block;
+}
+.banner2content{
+  width:100%;
+  padding:1rem 1rem 0rem 1rem;
+}
+.banner2contentbox {
+padding: 0;
+}
+.banner2contentbox img{
+  width:100%;
+  padding:0;
+}
+.banner2detail{
+  padding: 2rem 0 1rem 1rem;
+}
+.banner2 .third{
+  background-color: none;
+}
+.banner2 .third{
+  background-color: rgba(0, 0, 255, 0)
+}
+}
+
 /*banner3 */
 .banner3{
-  background-color: #d4d4d3;
+  background-color: rgba(150,150,150,0.1);
   background-size: cover;
 }
 .banner3 .container{
@@ -184,15 +318,161 @@ header span{
 .banner3allboxes{
   display:flex;
   justify-content: space-around;
+  flex-flow: wrap;
   margin:0 64px;
 }
 .banner3box{
-  width:32%;
+  width:31%;
   margin:0 8px 32px 8px;
-  background-color: white;
+  background-color: rgba(255,255,255,0.7);
   height:22rem;
 
 }
+
+
 .banner3box img{
   width:100%;
+}
+.banner3box h2{
+  padding:1rem 0 1rem 1rem;
+}
+.banner3box p{
+  padding:.5rem 0 0.5rem 1rem;
+}
+
+
+@media only screen and (max-width:478px){
+.banner3allboxes{
+  flex-flow: column;
+  display:nowrap;
+  justify-content: center;
+  margin:0;
+  width:100%;
+  padding-bottom: 1.5rem;
+}
+.banner3box{
+  width:auto;
+  margin:0 1rem 0.5rem;
+  background-color: white;
+  height:auto;
+  text-align: left;
+}
+.banner3box h2{
+  padding:1rem 1rem 1.5rem 1rem;
+}
+.banner3 h1{
+  padding: 2rem 0 1rem;
+}
+
+}
+
+/*banner4 */
+.banner4{
+  background-color: white;
+  background-size: cover;
+}
+.banner4 h1{
+  padding: 2rem 0;
+  text-align: center;
+}
+.banner4 .container{
+  }
+.banner4contentall{
+  display:flex;
+  width:100%;
+}
+.banner4big{
+  width:60%;
+}
+.banner4videoframe{
+  padding:0 1.5rem;
+}
+video{
+  width:100%;
+}
+.banner4content{
+  width:40%;
+  padding:0 0 2rem 0;
+}
+
+.banner4contentbox{
+ width:100%;
+ display:flex;
+ align-items: center;
+}
+.banner4contentbox img{
+  width:35%;
+  padding: 1rem;
+}
+
+.banner4detail{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.banner4detail h2{
+  padding-bottom:1rem;
+}
+.banner4detail p{
+  padding-bottom:1rem;
+  font-size:1rem;
+  color:rgba(0,0,0,0.5)
+}
+.banner4detail a{
+  padding-bottom:1rem;
+  line-height: 1.4;
+  font-size:1rem;
+  color:blue;
+}
+.banner4 .first{
+  background-color: rgba(70,70,70,0.1);
+
+}
+.banner4big h2{
+  padding:1.5rem 0 0.5rem 1.5rem;
+}
+.banner4big p{
+  padding:0 0 2rem 1.5rem;
+}
+
+@media only screen and (max-width:478px){
+
+.banner4 h1{
+  padding: 2rem 0 1rem;
+}
+.banner4big{
+  width:auto;
+}
+.banner4videoframe{
+  padding:0 0 1.5rem 0 ;
+}
+}
+/*footer */
+footer{
+  border-top: 1px solid rgba(70,70,70,0.2);
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+footer a{
+  padding-left: 1rem;
+}
+footer .links{
+  padding-top:1rem;
+  padding-right:1.5rem;
+}
+
+footer p{
+  padding:1rem 0 5rem 1.5rem;
+}
+@media only screen and (max-width:478px){
+  footer{
+    border-top: 0px solid #767675;
+  }
+  footer p{
+    padding:1rem 0 1rem 1rem;
+  }
+
 }

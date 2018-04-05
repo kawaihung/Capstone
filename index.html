@@ -2,29 +2,34 @@
   <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
-      <title>Colmar Academy</title>
+      <title>Kolmer Academy</title>
       <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
       <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+      <meta name="viewport" content="width=device-width">
+      <link rel="shortcut icon" type="image/png" href="./resources/images/ic-logo.png">
     </head>
     <body>
       <!--header-->
       <header>
         <div class="container">
-          <img src="./resources/images/ic-logo.svg">
+          <img class="mobileicon" src="./resources/images/ic-logo.svg">
+          <img class="mobile icon mobileicon" src="./resources/images/ic-on-campus.svg">
+          <img class="mobile icon mobileicon" src="./resources/images/ic-online.svg">
+          <img class="mobile icon mobileicon" src="./resources/images/ic-login.svg">
           <div class="logo">
-            <span class="bold">COLMAR</span><span>ACADEMY</span>
+            <span class="bold">KOLMER</span><span>ACADEMY</span>
           </div>
           <nav>
-            <p>On campus</p>
-            <p>Online</p>
-            <p>or companies</p>
-            <p>Sign in</p>
+            <a href="#">On campus</a>
+            <a href="#">Online</a>
+            <a href="#">or companies</a>
+            <a href="#">Sign in</a>
           </nav>
         <div>
       </header>
         <!--banner1-->
-      <div class="banner1">
+      <div class="banner1 hover2">
         <div class="container">
           <div class="banner1imageframe">
             <div class="banner1image">
@@ -45,9 +50,9 @@
         </div>
       </div>
 <!--banner2-->
-      <div class="banner2">
+      <div class="banner2 hover2">
         <div class="container">
-          <div class="banner2imageframe">
+          <div class="banner2imageframe nomobile">
             <div class="banner2image">
               <img src="./resources/images/information-main.jpg">
             </div>
@@ -60,8 +65,9 @@
             </div>
           </div>
           <div class="banner2content">
-            <div class="banner2contentbox first">
-              <img src="./resources/images/information-orientation.jpg" >
+            <div class="banner2contentbox first hover">
+              <img class="nomobile" src="./resources/images/information-orientation.jpg" >
+              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" >
               <div class="banner2detail">
                 <h2>Orintation Date</h2>
                 <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
@@ -69,8 +75,9 @@
               </div>
             </div>
 
-            <div class="banner2contentbox second">
-              <img src="./resources/images/information-campus.jpg" >
+            <div class="banner2contentbox second hover">
+              <img class="nomobile" src="./resources/images/information-campus.jpg" >
+              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" >
               <div class="banner2detail">
                 <h2>Our Campus</h2>
                 <p>Find which campus is close by you</p>
@@ -78,8 +85,9 @@
               </div>
             </div>
 
-            <div class="banner2contentbox third">
-              <img src="./resources/images/information-guest-lecture.jpg" >
+            <div class="banner2contentbox third " id="hover">
+              <img class="nomobile" src="./resources/images/information-guest-lecture.jpg" >
+              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" >
               <div class="banner2detail">
                 <h2>Our guest lecture</h2>
                 <p>Join a keynote with Oliver Sack about music about medical treatment</p>
@@ -90,39 +98,104 @@
         </div>
       </div>
 <!--banner3-->
-      <div class="banner3">
+      <div class="banner3 hover2">
         <div class=" container">
           <h1>Start learning</h1>
           <div class="banner3allboxes">
 
-            <div class="banner3box">
-              <img src="./resources/images/course-software.jpg">
-              <h2>Software engineering</h2>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-software.jpg">
+              <h2 >Software engineering</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">Web Development, Mobile Development, iOT, APIs</p>
             </div>
 
-            <div class="banner3box">
-              <img src="./resources/images/course-software.jpg">
-              <h2>Software engineering</h2>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-computer-art.jpg">
+              <h2>Computer art</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">maging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
 
-            <div class="banner3box">
-              <img src="./resources/images/course-software.jpg">
-              <h2>Software engineering</h2>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-design.jpg">
+              <h2>Design</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">User Expierence Deisgn, User Research, Visual Design</p>
             </div>
 
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-data.jpg">
+              <h2>Data</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-business.jpg">
+              <h2>Business</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">Product Development, Business Development, Startup</p>
+            </div>
+
+            <div class="banner3box hover">
+              <img class="nomobile" src="./resources/images/course-marketing.jpg">
+              <h2>Marketing</h2>
+              <p class="nomobile">COURSES</p>
+              <p class="nomobile">Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
 
           </div>
         </div>
-
-
-
       </div>
+<!--banner4-->
+      <div class="banner4 hover2">
+        <div class="container">
+          <h1>Thesis exhibit</h1>
+          <div class="banner4contentall">
+            <div class="banner4big">
+              <div class="banner4videoframe">
+                <video src="./resources/videos/thesis.mp4"  autoplay loop>
+              </div>
+              <h2 class="nomobile">Reimagine urban</h2>
+              <p class="nomobile">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+            <div class="banner4content nomobile" >
+                <div class="banner4contentbox first" id="hover">
+                  <img src="./resources/images/information-orientation.jpg" >
+                  <div class="banner4detail">
+                    <h2>Orintation Date</h2>
+                    <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#">Read more</a>
+                  </div>
+                </div>
+
+                <div class="banner4contentbox second hover">
+                  <img src="./resources/images/information-campus.jpg" >
+                  <div class="banner4detail">
+                    <h2>Our Campus</h2>
+                    <p>Find which campus is close by you</p>
+                    <a href="#">Read more</a>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+<!--footer-->
+      <footer>
+        <div class="container">
+          <p>© 2016 Kolmer Academy. All rights reserved</p>
+          <div class="nomobile links">
+          <a link="#">Terms</a>
+          <a link="#">Privacy</a>
+        </div>
+
+
+        </div>
+
+      </footer>
 
 
 
